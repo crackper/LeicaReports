@@ -17,8 +17,7 @@ class CreateEnumTablesTable extends Migration {
 			$table->increments('id');
             $table->string('type',50);
             $table->string('name');
-            $table->string('symbol',50);
-            $table->integer('attributes');
+            $table->string('symbol',50)->nullable();
 			$table->timestamps();
             $table->softDeletes();
         });

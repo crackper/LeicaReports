@@ -16,7 +16,7 @@ class CreateEnumAttributesTable extends Migration {
 		{
 			$table->increments('id');
             $table->string('enum_class');
-            $table->string('attribute_names');
+            $table->string('attribute_names')->nullable();
 			$table->timestamps();
             $table->softDeletes();
         });

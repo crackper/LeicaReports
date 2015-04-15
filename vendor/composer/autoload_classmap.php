@@ -6,10 +6,13 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'CreateExamenMedicosTable' => $baseDir . '/database/migrations/2015_04_14_211309_create_examen_medicos_table.php',
+    'CreateEnumAttributesTable' => $baseDir . '/database/migrations/2015_04_15_131330_create_enum_attributes_table.php',
+    'CreateEnumTablesTable' => $baseDir . '/database/migrations/2015_04_15_132212_create_enum_tables_table.php',
     'CreatePasswordResetsTable' => $baseDir . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
     'CreateUsersTable' => $baseDir . '/database/migrations/2014_10_12_000000_create_users_table.php',
     'DatabaseSeeder' => $baseDir . '/database/seeds/DatabaseSeeder.php',
+    'EnumTablesTableSeeder' => $baseDir . '/database/seeds/EnumTablesTableSeeder.php',
+    'EnumAttributesTableSeeder' => $baseDir . '/database/seeds/EnumAttributesTableSeeder.php',
     'File_Iterator' => $vendorDir . '/phpunit/php-file-iterator/File/Iterator.php',
     'File_Iterator_Facade' => $vendorDir . '/phpunit/php-file-iterator/File/Iterator/Facade.php',
     'File_Iterator_Factory' => $vendorDir . '/phpunit/php-file-iterator/File/Iterator/Factory.php',
