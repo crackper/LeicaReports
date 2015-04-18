@@ -14,12 +14,12 @@ class CreateEnumAttributesTable extends Migration {
 	{
 		Schema::create('enum_attributes', function(Blueprint $table)
 		{
-			$table->increments('id');
+            $table->increments('id');
             $table->string('enum_class');
             $table->string('attribute_names')->nullable();
-			$table->timestamps();
+            $table->timestamps();
             $table->softDeletes();
-        });
+		});
 	}
 
 	/**

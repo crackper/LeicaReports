@@ -2,19 +2,13 @@
 /**
  * Created by PhpStorm.
  * User: Samuel
- * Date: 15/04/15
- * Time: 9:01 AM
+ * Date: 18/04/15
+ * Time: 8:20 AM
  */
 
-use  \Illuminate\Database\Seeder;
-
-class EnumTablesTableSeeder extends Seeder{
-
+class EnumTablesTableSeeder extends \Illuminate\Database\Seeder {
     public function run(){
         DB::table('enum_tables')->delete();
-
-
-
         $enums = array(
             ['id'=> 1,'type'=>'ExamenMedico','name'=>'Ex. Med. Ocupacional Anual (EMOA)','symbol'=>'EMOA','created_at' => new DateTime, 'updated_at' => new DateTime],
             ['id'=> 2,'type'=>'ExamenMedico','name'=>'Ex. Med. Ocupacional Retiro (EMOR)','symbol'=>'EMOR','created_at' => new DateTime, 'updated_at' => new DateTime],
@@ -24,8 +18,6 @@ class EnumTablesTableSeeder extends Seeder{
             ['id'=> 6,'type'=>'ExamenMedico','name'=>'Ex. Med. Dermatológico','symbol' => '','created_at' => new DateTime, 'updated_at' => new DateTime],
             ['id'=> 7,'type'=>'ExamenMedico','name'=>'Ex. Med. Psicológico','symbol'=>'','created_at' => new DateTime, 'updated_at' => new DateTime]
         );
-
         DB::table('enum_tables')->insert($enums);
     }
-
-}
+} 

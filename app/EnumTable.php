@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Eloquent\Model;
 
-class EnumAttributes extends Model {
+class EnumTable extends Model {
 
 	//
 
